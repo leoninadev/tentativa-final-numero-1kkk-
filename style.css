@@ -1,43 +1,43 @@
 /* Estilos Gerais */
 body {
-    font-family: 'Role Model', sans-serif; /* Fonte para o corpo do texto */
+    font-family: 'Role Model', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5EBDF;
-    color: #384538; /* Verde Pine */
-    line-height: 1.6;
-    overflow-x: hidden; /* Impede a rolagem horizontal */
+    background-color: #F5EBDF; /* Cor de fundo mais suave */
+    color: #4A372F; /* Castanho Chestnut */
+    line-height: 1.7; /* Aumentei o line-height para melhorar a legibilidade */
+    overflow-x: hidden;
 }
 
 /* Container principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Adicionado padding para telas menores */
+    padding: 0 30px; /* Aumentei o padding nas laterais */
 }
 
 /* Header */
 header {
-    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo transparente */
-    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo mais opaco */
+    padding: 25px 0; /* Aumentei o padding vertical */
     z-index: 1000;
-    backdrop-filter: blur(10px); /* Efeito de desfoque */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra mais suave */
 }
 
 header .navbar-brand {
-    font-family: 'Nixie One', cursive; /* Fonte para o título */
-    font-size: 1.8em;
+    font-family: 'Nixie One', cursive;
+    font-size: 2.2em; /* Aumentei o tamanho da fonte */
     font-weight: bold;
-    color: #384538; /* Verde Pine */
-    text-decoration: none; /* Remove underline do link */
+    color: #4A372F; /* Castanho Chestnut */
+    text-decoration: none;
 }
 
 header .navbar-nav .nav-link {
-    color: #384538; /* Verde Pine */
-    font-size: 1.1em;
-    padding: 0 15px;
-    transition: color 0.3s ease; /* Transição de cor suave */
+    color: #4A372F; /* Castanho Chestnut */
+    font-size: 1.2em; /* Aumentei o tamanho da fonte */
+    padding: 0 20px; /* Aumentei o padding horizontal */
+    transition: color 0.3s ease;
 }
 
 header .navbar-nav .nav-link:hover {
@@ -46,30 +46,29 @@ header .navbar-nav .nav-link:hover {
 
 header .navbar-nav .nav-item .dropdown-menu {
     background-color: #F5EBDF;
-    border: 1px solid #d3d3d3;
+    border: none; /* Removi a borda */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra suave */
     border-radius: 5px;
 }
 
 header .navbar-nav .nav-item .dropdown-item {
-    color: #384538; /* Verde Pine */
+    color: #4A372F; /* Castanho Chestnut */
+    padding: 10px 20px; /* Aumentei o padding */
 }
 
 header .navbar-nav .nav-item .dropdown-item:hover {
    background-color: #b3d9d9;
-   color: #384538; /* Verde Pine */
+   color: #4A372F; /* Castanho Chestnut */
 }
 
 /* Estilos para o Header */
 .custom-navbar {
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo mais opaco */
-    backdrop-filter: blur(5px); /* Ajuste no desfoque */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
-    padding: 15px 0; /* Reduzindo um pouco o padding */
+    padding: 20px 0; /* Aumentei o padding vertical */
 }
 
 .nav-link-effect {
     position: relative;
-    padding-bottom: 3px; /* Espaço para a linha */
+    padding-bottom: 5px; /* Aumentei o padding inferior */
 }
 
 .nav-link-effect::before {
@@ -78,13 +77,13 @@ header .navbar-nav .nav-item .dropdown-item:hover {
     left: 0;
     bottom: 0;
     width: 0;
-    height: 2px; /* Espessura da linha */
+    height: 3px; /* Aumentei a espessura da linha */
     background-color: #749297;
-    transition: width 0.3s ease; /* Transição suave */
+    transition: width 0.4s ease; /* Transição mais suave */
 }
 
 .nav-link-effect:hover::before {
-    width: 100%; /* Animação da linha */
+    width: 100%;
 }
 
 /* Banners */
@@ -94,18 +93,19 @@ header .navbar-nav .nav-item .dropdown-item:hover {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    overflow: hidden; /* Evita que conteúdo ultrapasse o banner */
+    overflow: hidden;
 }
 
 /* Banner 1 */
 .banner-1 {
-    height: 80vh; /* Reduz a altura para um layout mais equilibrado */
+    height: 85vh; /* Ajustei a altura */
     background-image: url('img/ana-furtado-banner1.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Para o posicionamento absoluto da overlay */
+    position: relative;
 }
+
 .banner-1::before {
     content: '';
     position: absolute;
@@ -113,41 +113,45 @@ header .navbar-nav .nav-item .dropdown-item:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3); /* Ajustei a opacidade */
 }
+
 /* Texto sobreposto no Banner 1 */
 .banner-text-overlay {
     text-align: center;
-    color: #F5EBDF; /* Branco */
+    color: #F5EBDF;
     position: relative;
     z-index: 1;
-    padding: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+    padding: 30px; /* Aumentei o padding */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Ajustei a sombra */
 }
+
 /* Título do Banner 1 */
 .banner-text {
-    font-family: 'Nixie One', cursive; /* Fonte para o título */
+    font-family: 'Nixie One', cursive;
     font-style: italic;
-    font-size: 5em;
+    font-size: 6em; /* Aumentei o tamanho da fonte */
     margin: 0;
     text-transform: lowercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px; /* Aumentei o espaçamento */
 }
 
 /* Banner 2 */
 .banner-2 {
     background-color: #F5EBDF;
-    padding: 80px 0;
+    padding: 100px 0; /* Aumentei o padding vertical */
     height: auto;
-    color: #384538; /* Verde Pine */
+    color: #4A372F; /* Castanho Chestnut */
 }
+
 .banner-2 .banner-text-2 {
-    font-family: 'Role Model', sans-serif; /* Fonte para o corpo do texto */
+    font-family: 'Role Model', sans-serif;
     font-style: italic;
-    font-size: 1.8em;
-    line-height: 1.4;
-    color: #F5EBDF; /* Branco */
+    font-size: 2em; /* Aumentei o tamanho da fonte */
+    line-height: 1.5;
+    color: #4A372F; /* Castanho Chestnut */
 }
+
 .banner-2 .banner-image-container {
     display: flex;
     justify-content: flex-end;
@@ -155,26 +159,27 @@ header .navbar-nav .nav-item .dropdown-item:hover {
 
 .banner-2 .banner-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px; /* Aumentei o tamanho máximo */
     display: block;
-    border-radius: 8px;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Arredondei as bordas */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Ajustei a sombra */
 }
 
 /* Estilos para a Sombra da Imagem */
 .image-shadow {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Ajustei a sombra */
 }
 
 /* Banner 3 */
 .banner-3 {
     background-image: url('img/banner3-bg.jpg');
     background-size: cover;
-    padding: 80px 0;
-    color: #F5EBDF; /* Branco */
+    padding: 120px 0; /* Aumentei o padding vertical */
+    color: #F5EBDF;
     background-position: top center;
-    position: relative; /* Para o posicionamento absoluto da overlay */
+    position: relative;
 }
+
 .banner-3::before {
     content: '';
     position: absolute;
@@ -182,121 +187,128 @@ header .navbar-nav .nav-item .dropdown-item:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Overlay escura */
+    background-color: rgba(0, 0, 0, 0.5); /* Ajustei a opacidade */
 }
+
 .banner-3 .bio-text {
-  font-family: 'Role Model', sans-serif; /* Fonte para o corpo do texto */
-  font-size: 1.1em;
-    padding: 20px;
+    font-family: 'Role Model', sans-serif;
+    font-size: 1.2em; /* Aumentei o tamanho da fonte */
+    padding: 30px; /* Aumentei o padding */
     text-align: justify;
     line-height: 1.8;
-    position: relative; /* Para ficar acima da overlay */
-    z-index: 1; /* Para ficar acima da overlay */
+    position: relative;
+    z-index: 1;
 }
+
 .banner-3 .bio-text p {
-  margin-bottom: 15px;
+    margin-bottom: 20px; /* Aumentei a margem inferior */
 }
 
 /* Banner 4 */
 .banner-4 {
-    padding: 80px 0;
+    padding: 100px 0; /* Aumentei o padding vertical */
     background-color: #F5EBDF;
-    color: #384538; /* Verde Pine */
+    color: #4A372F; /* Castanho Chestnut */
 }
+
 .banner-4 h2 {
-     font-family: 'Nixie One', cursive; /* Fonte para o título */
-    font-size: 2.5em;
-    margin-bottom: 40px;
+    font-family: 'Nixie One', cursive;
+    font-size: 3em; /* Aumentei o tamanho da fonte */
+    margin-bottom: 50px; /* Aumentei a margem inferior */
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Aumentei a margem inferior */
 }
 
 .icon-item {
-    width: 80px;
+    width: 90px; /* Aumentei o tamanho dos ícones */
     height: auto;
-    margin: 0 15px;
+    margin: 0 20px; /* Aumentei a margem horizontal */
     filter: grayscale(100%);
-    transition: filter 0.3s ease;
+    transition: filter 0.3s ease, transform 0.3s ease; /* Adicionei transição para o transform */
 }
 
 .icon-item:hover {
     filter: grayscale(0%);
+    transform: scale(1.1); /* Aumentei o tamanho ao passar o mouse */
 }
 
 /* Estilos para o Efeito de Zoom nos Ícones */
 .icon-zoom {
-    transition: transform 0.3s ease; /* Transição suave */
+    transition: transform 0.4s ease; /* Transição mais suave */
 }
 
 .icon-zoom:hover {
-    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    transform: scale(1.15); /* Aumentei o tamanho ao passar o mouse */
 }
 
 /* Páginas de Projetos */
 .project-page {
-    padding: 80px 0;
+    padding: 120px 0; /* Aumentei o padding vertical */
     text-align: center;
 }
+
 .project-page h2 {
-     font-family: 'Nixie One', cursive; /* Fonte para o título */
-    font-size: 2.8em;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    color: #384538; /* Verde Pine */
+    font-family: 'Nixie One', cursive;
+    font-size: 3.5em; /* Aumentei o tamanho da fonte */
+    margin-bottom: 30px; /* Aumentei a margem inferior */
+    letter-spacing: 2px;
+    color: #4A372F; /* Castanho Chestnut */
 }
 
 .project-page p {
-    font-family: 'Role Model', sans-serif; /* Fonte para o corpo do texto */
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #384538; /* Verde Pine */
+    font-family: 'Role Model', sans-serif;
+    font-size: 1.4em; /* Aumentei o tamanho da fonte */
+    margin-bottom: 40px; /* Aumentei a margem inferior */
+    color: #4A372F; /* Castanho Chestnut */
+    line-height: 1.7; /* Aumentei o line-height */
 }
 
 .project-page .em-construcao {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.8em; /* Aumentei o tamanho da fonte */
 }
 
 .project-page .em-construcao img {
-    width: 50px;
-    margin-left: 10px;
+    width: 60px; /* Aumentei o tamanho da imagem */
+    margin-left: 15px; /* Aumentei a margem esquerda */
 }
 
 /* Galeria de Conteúdo */
 .gallery {
-    padding: 80px 0;
+    padding: 100px 0; /* Aumentei o padding vertical */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 40px; /* Aumentei o espaçamento */
 }
 
 .gallery img {
     width: 100%;
-    max-width: 300px;
+    max-width: 350px; /* Aumentei o tamanho máximo */
     height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Ajustei a sombra */
+    transition: transform 0.4s ease; /* Transição mais suave */
 }
+
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.08); /* Aumentei o tamanho ao passar o mouse */
 }
 
 /* Rodapé */
 .footer {
     background-color: #4A372F; /* Castanho Chestnut */
-    color: #F5EBDF; /* Branco */
-    padding: 40px 0;
+    color: #F5EBDF;
+    padding: 50px 0; /* Aumentei o padding vertical */
     text-align: center;
 }
 
@@ -307,77 +319,88 @@ header .navbar-nav .nav-item .dropdown-item:hover {
 }
 
 .footer-icons {
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Aumentei a margem inferior */
 }
 
 /* Estilos para os Ícones de Redes Sociais */
 .social-icon {
-    color: #F5EBDF; /* Branco */
-    transition: color 0.3s ease; /* Transição de cor suave */
-    margin: 0 10px;
-    font-size: 1.5em;
+    color: #F5EBDF;
+    transition: color 0.4s ease, transform 0.4s ease; /* Adicionei transição para o transform */
+    margin: 0 15px; /* Aumentei a margem horizontal */
+    font-size: 1.8em; /* Aumentei o tamanho da fonte */
 }
 
 .social-icon:hover {
-    color: #b3d9d9; /* Cor ao passar o mouse */
+    color: #b3d9d9;
+    transform: scale(1.2); /* Aumentei o tamanho ao passar o mouse */
 }
 
 .footer-form {
     width: 100%;
-    max-width: 500px;
-    margin-bottom: 20px;
+    max-width: 600px; /* Aumentei o tamanho máximo */
+    margin-bottom: 30px; /* Aumentei a margem inferior */
 }
 
 .footer-form input,
 .footer-form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #d3d3d3;
-    border-radius: 5px;
+    padding: 15px; /* Aumentei o padding */
+    margin-bottom: 20px; /* Aumentei a margem inferior */
+    border: none; /* Removi a borda */
+    border-radius: 8px;
     background-color: #F5EBDF;
-    color: #384538; /* Verde Pine */
-    font-family: 'Role Model', sans-serif; /* Fonte para o corpo do texto */
+    color: #4A372F; /* Castanho Chestnut */
+    font-family: 'Role Model', sans-serif;
+    font-size: 1.1em; /* Aumentei o tamanho da fonte */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Adicionei uma sombra suave */
 }
 
 .footer-form textarea {
     resize: vertical;
-    height: 120px;
+    height: 150px; /* Aumentei a altura */
 }
 
 .footer-form button {
     background-color: #384538; /* Verde Pine */
-    color: #F5EBDF; /* Branco */
-    padding: 10px 20px;
+    color: #F5EBDF;
+    padding: 15px 30px; /* Aumentei o padding */
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: 'Role Model', sans-serif; /* Fonte para o corpo do texto */
+    transition: background-color 0.4s ease, transform 0.4s ease; /* Adicionei transição para o transform */
+    font-family: 'Role Model', sans-serif;
+    font-size: 1.2em; /* Aumentei o tamanho da fonte */
 }
 
 .footer-form button:hover {
     background-color: #749297;
+    transform: scale(1.05); /* Aumentei o tamanho ao passar o mouse */
 }
 
 .footer-copy {
-    font-size: 0.9em;
-    font-family: 'Role Model', sans-serif; /* Fonte para o corpo do texto */
+    font-size: 1em; /* Aumentei o tamanho da fonte */
+    font-family: 'Role Model', sans-serif;
+    color: #b3d9d9; /* Cor mais clara */
 }
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .banner-2 .banner-text-2 {
-        font-size: 1.4em;
+        font-size: 1.6em; /* Reduzi o tamanho da fonte */
     }
+
     .banner-2 .banner-image {
-        max-width: 300px;
+        max-width: 350px; /* Reduzi o tamanho máximo */
     }
+
     .icon-container {
         flex-wrap: wrap;
     }
+
     .icon-item {
-        width: 60px;
-        margin: 10px;
+        width: 70px; /* Reduzi o tamanho dos ícones */
+        margin: 15px; /* Ajustei a margem */
     }
-}
+
+    .footer-form {
+        max-width: 
